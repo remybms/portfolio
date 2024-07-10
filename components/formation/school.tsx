@@ -31,7 +31,7 @@ export default function School() {
         <div className="flex flex-col-reverse text-center m-10 space-y-14 space-y-reverse">
             {data.map((item) => (
                 <div className="grid grid-cols-2 text-pink justify-items-center items-center space-y-4 text-lg">
-                    <h1 className="col-span-2 text-2xl font-bold text-blue">{item.diplome_ou_formation}</h1>
+                    <h1 className="col-span-2 text-2xl font-bold text-darkpink">{item.diplome_ou_formation}</h1>
                     <div className="flex flex-col text-xl">
                         <div>{item.etablissement}</div>
                         <div>{item.ville}</div>
