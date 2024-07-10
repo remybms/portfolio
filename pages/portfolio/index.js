@@ -5,9 +5,9 @@ export default function Portfolio() {
     <>
     <main className='min-h-screen bg-darkblue'>
       <Header />
-      <div className="grid grid-cols-2 justify-around">
+      <div className="grid grid-cols-2 justify-around text-center justify-items-center">
 
-        <div className='text-darkpink text-xl m-4'>
+        <div className='text-darkpink text-xl m-4 w-fit'>
           <h1 className='m-4 w-fit'>
             Groupie Tracker
           </h1>
@@ -20,7 +20,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className='text-darkpink text-xl m-4'>
+        <div className='text-darkpink text-xl m-4 w-fit'>
           <h1 className='m-4 w-fit'>
             Les Briscards
           </h1>

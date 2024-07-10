@@ -12,7 +12,8 @@ module.exports = {
       'blue': '#4A919E',
       'pastel': '#BED3C3',
       'pink': '#EBACA2',
-      'darkpink': '#CE6A6B'
+      'darkpink': '#CE6A6B',
+      'transparent': 'transparent'
     }
   },
   plugins: [],
