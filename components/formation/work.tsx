@@ -1,6 +1,6 @@
 import React from "react";
 
-interface Experience{
+interface Experience {
     poste: string;
     entreprise: string;
     lieu: string;
@@ -29,17 +29,22 @@ export default function Work() {
     }, []);
 
     return (
-        <div className="flex flex-col-reverse text-center">
+        <div className="flex flex-col-reverse text-center m-10 space-y-14 space-y-reverse">
             {data.map((item) => (
-                <div>
-                    <div>{item.poste}</div>
-                    <div>{item.entreprise}</div>
-                    <div>{item.lieu}</div>
-                    <div>{item.embauche}</div>
-                    <div>{item.depart}</div>
-                    <div>{item.mission1}</div>
-                    <div>{item.mission2}</div>
-                    <div>{item.mission3}</div>
+                <div className="grid grid-cols-2 text-pink justify-items-center items-center space-y-4 text-lg">
+                    <h1 className="col-span-2 text-2xl font-bold text-blue">{item.poste}</h1>
+                    <div className="flex flex-col text-xl">
+                        <div>{item.entreprise}</div>
+                        <div>{item.lieu}</div>
+                    </div>
+                    <div className="flex space-x-2 text-xl">
+                        <div>{item.embauche}</div>
+                        <div>-</div>
+                        <div>{item.depart}</div>
+                    </div>
+                    <div className="col-span-2">{item.mission1}</div>
+                    <div className="col-span-2">{item.mission2}</div>
+                    <div className="col-span-2">{item.mission3}</div>
                 </div>
             ))}
         </div>

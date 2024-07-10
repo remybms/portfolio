@@ -12,9 +12,9 @@ export default function Header() {
             </div>
         </Link>
         <div className=" flex m-8 text-2xl h-min text-pink">
-            <Link className="border-b-2 hover:border-pastel border-transparent mr-2" href="mailto:bamasremy43@gmail.com">Me contacter</Link>
-            <Link className="border-b-2 hover:border-pastel border-transparent ml-2 mr-2" href="/portfolio">Portfolio</Link>
-            <Link className="border-b-2 hover:border-pastel border-transparent ml-2" href="/">à propos</Link>
+            <Link className="border-b-2 hover:border-pastel border-transparent active:border-pink mr-2" href="mailto:bamasremy43@gmail.com">Me contacter</Link>
+            <Link className="border-b-2 hover:border-pastel border-transparent active:border-pink ml-2 mr-2" href="/portfolio">Portfolio</Link>
+            <Link className="border-b-2 hover:border-pastel border-transparent active:border-pink ml-2" href="/">À propos</Link>
         </div>
         </div>
 )

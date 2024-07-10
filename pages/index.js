@@ -29,10 +29,10 @@ export default function Home() {
           <div className='flex justify-center content-center text-pink mb-60'>
             <div className='grid-cols-1 gap-y-16 h-fit mt-32 mb-32'>
               <div className='text-3xl animate-pulse'>Développeur Web</div>
-              <div>Je suis un développeur web full stack, passionné et expérimenté.</div>
-              <div className='flex'>
-                <Link href='https://www.linkedin.com/in/rémy-bamas-83ba7a170'><AiFillLinkedin size={42} /></Link>
-                <Link href="https://github.com/remybms"><AiFillGithub size={42} /></Link>
+              <div className='text-xl'>Je suis un développeur web full stack, passionné et expérimenté.</div>
+              <div className='flex space-x-4'>
+                <Link href='https://www.linkedin.com/in/rémy-bamas-83ba7a170'><AiFillLinkedin size={50} /></Link>
+                <Link href="https://github.com/remybms"><AiFillGithub size={50} /></Link>
               </div>
 
             </div>
@@ -45,12 +45,9 @@ export default function Home() {
           </div>
         </div>
         <div id='formation' className='flex flex-col max-w-screen items-center'>
-          <div className=' text-2xl text-pastel'>
+          <div className=' text-2xl text-pastel p-2 border-4 rounded-lg'>
             <button onClick={workDisplay} className='focus:bg-darkpink p-2 rounded-md'>Expérience</button>
-            <button onClick={schoolDisplay} className='focus:bg-darkpink p-2 rounded
-            
-            
-            -md'>Formation</button>
+            <button onClick={schoolDisplay} className='focus:bg-darkpink p-2 rounded-md'>Formation</button>
           </div>
           <div>
             {experience === "work" && <Work />}
