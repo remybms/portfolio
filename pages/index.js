@@ -8,6 +8,7 @@ import Link from 'next/link'
 import React from 'react'
 import Work from '@/components/formation/work.tsx'
 import School from '@/components/formation/school.tsx'
+import Footer from '@/components/footer'
 
 export default function Home() {
 
@@ -56,7 +57,7 @@ export default function Home() {
 
         </div>
 
-
+    <Footer/>
       </main></>
   )
 }

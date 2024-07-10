@@ -1,9 +1,10 @@
+import Footer from '@/components/footer'
 import Header from '@/components/header'
 
 export default function Portfolio() {
   return (
     <>
-    <main className='min-h-screen bg-darkblue'>
+    <main className=' flex flex-col min-h-screen bg-darkblue justify-between'>
       <Header />
       <div className="grid grid-cols-2 justify-around text-center justify-items-center">
 
@@ -33,6 +34,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
+      <Footer/>
     </main></>
   )
 }
