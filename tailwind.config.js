@@ -19,7 +19,12 @@ module.exports = {
       'python': '#3e74a2',
       'php': '#556096',
       'c#': '#6f0885'
-    }
+    },
+    screens: {
+      'phone': '431px',
+      'tablet': '720px',
+      'pc': '1310px',
+    },
   },
   plugins: [],
 }
