@@ -21,7 +21,7 @@ module.exports = {
       'c#': '#6f0885'
     },
     screens: {
-      'phone': '365px',
+      'phone': '431px',
       'tablet': '720px',
       'pc': '1310px',
     },

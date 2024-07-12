@@ -6,7 +6,7 @@ export default function Portfolio() {
     <>
     <main className=' flex flex-col min-h-screen bg-darkblue justify-between'>
       <Header />
-      <div className="grid grid-cols-2 justify-around text-center justify-items-center">
+      <div className="grid pc:grid-cols-2 grid-cols-1 justify-around text-center justify-items-center">
 
         <div className='text-darkpink text-xl m-4 w-fit'>
           <h1 className='m-4 w-fit'>
