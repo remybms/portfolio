@@ -87,8 +87,12 @@ export default function Home() {
           </ul>
 
           <div className=' text-2xl text-pastel p-2 border-4 rounded-lg'>
-            <button onClick={workDisplay} className='hover:bg-darkpink active:bg-pink active:text-darkblue p-2 rounded-md'>Expérience</button>
-            <button onClick={schoolDisplay} className='hover:bg-darkpink active:bg-pink active:text-darkblue p-2 rounded-md'>Formation</button>
+            <button onClick={workDisplay} className={` hover:bg-pink hover:text-darkblue p-2 rounded-md ${experience === 'work' ? 'bg-darkpink' : 'bg-darkblue'}`}>
+              Expérience
+            </button>
+            <button onClick={schoolDisplay} className={`hover:bg-pink hover:text-darkblue p-2 rounded-md ${experience === 'school' ? 'bg-darkpink' : 'bg-darkblue'}`}>
+              Formation
+            </button>
           </div>
           <div>
             {experience === "work" && <Work />}
