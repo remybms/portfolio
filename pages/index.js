@@ -1,6 +1,7 @@
 "use client"
 
 import Header from '@/components/header'
+import Head from "next/head";
 import { AiFillLinkedin, AiFillGithub, AiOutlineArrowDown } from 'react-icons/ai'
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaPython, FaJava } from "react-icons/fa6";
@@ -26,6 +27,10 @@ export default function Home() {
     <>
 
       <main className='min-h-screen bg-darkblue'>
+        <Head>
+          <title>Rémy Bamas</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Header />
         <div className="flex-col mb-16">
           <div className='flex flex-col-reverse tablet:flex-row justify-center content-center text-pink pc:mb-60 mb-32 pt-24 pc:pt-0'>
@@ -51,7 +56,7 @@ export default function Home() {
             <li className='relative flex text-js'>
               <IoLogoJavascript size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-              <circle cx="50" cy="50" r="35" stroke="#E4C01A" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={130} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+                <circle cx="50" cy="50" r="35" stroke="#E4C01A" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={130} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
               </svg>
             </li>
             <li className='relative flex text-python'>
@@ -63,19 +68,19 @@ export default function Home() {
             <li className='relative flex text-java'>
               <FaJava size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-              <circle cx="50" cy="50" r="35" stroke="#d52827" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={190} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+                <circle cx="50" cy="50" r="35" stroke="#d52827" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={190} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
               </svg>
             </li>
             <li className='relative flex text-php'>
               <SiPhp size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-              <circle cx="50" cy="50" r="35" stroke="#556096" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={150} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+                <circle cx="50" cy="50" r="35" stroke="#556096" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={150} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
               </svg>
             </li>
             <li className='relative flex text-c#'>
               <SiCsharp size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-              <circle cx="50" cy="50" r="35" stroke="#6f0885" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={170} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+                <circle cx="50" cy="50" r="35" stroke="#6f0885" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={170} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
               </svg>
             </li>
 
