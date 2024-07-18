@@ -1,10 +1,8 @@
-"use client"
 
 import { slide as Menu } from 'react-burger-menu'
 import { IoReorderThree } from 'react-icons/io5'
 import { ImCross } from "react-icons/im";
 import Link from 'next/link';
-
 
 function Hamburger() {
     var styles = {
@@ -13,6 +11,7 @@ function Hamburger() {
             width: '42px',
             height: '42px',
             marginLeft: '1.25rem',
+            color: '#4A919E'
         },
         bmMenuWrap: {
             width: '50%',
