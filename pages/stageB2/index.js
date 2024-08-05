@@ -51,6 +51,20 @@ export default function Stage() {
                         Au cours de cette deuxième semaine, j'ai pu assister à une réunion en compagnie du responsable pédagogique, du référent filière et d'un collègue mentor. Au cours de cette réunion, nous avons essentiellement vu le planning des trois semaines d'ymmersions, et nous avons commencé la répartition de présence sur ces journées de cours pour les premières années. Sur cette semaine, j'ai également pu commencer à manipuler les outils nécessaires pour donner cours, tel que ytrack, une plateforme sur laquelle les étudiants pourront s'entrainer à coder avec de nouveaux langages.
                     </p>
                 </li>
+                <li className="flex flex-col space-y-2 items-center">
+                    <div className="flex space-x-6 text-blue items-center">
+                        <h2 className="border-b-2 w-fit  font-semibold text-xl px-1 text-center">
+                            Semaine 3
+                        </h2>
+                        <div>
+                            03/08/2024
+                        </div>
+                    </div>
+
+                    <p className="text-pastel text-center tablet:mx-20 pc:mx-40">
+                        Pendant cette troisième semaine, j'ai pu commencer à préparer des cours que je ferais aux premières années pendant leurs ymmersions, comme par exemple une initiation au HTML / CSS. Ce cours est nécessaire car au cours d'une réunion, nous nous sommes aperçus que sur la suite de leurs études, les étudiants n'avaient pas forcément toutes les bonnes pratiques nécessaires au développement web. Il est donc important de leur apprendre au moins les bases sur une session de 3 heures pour qu'ils puissent par la suite s'améliorer.
+                    </p>
+                </li>
 
             </ul>
             <Footer />
