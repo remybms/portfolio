@@ -40,7 +40,7 @@ export default function Stage() {
                 <li className="flex flex-col space-y-2 items-center">
                     <div className="flex space-x-6 text-blue items-center">
                         <h2 className="border-b-2 w-fit  font-semibold text-xl px-1 text-center">
-                            Semaine 2
+                            Semaine 2 : Première réunion
                         </h2>
                         <div>
                             27/07/2024
@@ -54,7 +54,7 @@ export default function Stage() {
                 <li className="flex flex-col space-y-2 items-center">
                     <div className="flex space-x-6 text-blue items-center">
                         <h2 className="border-b-2 w-fit  font-semibold text-xl px-1 text-center">
-                            Semaine 3
+                            Semaine 3 : Préparer l'initiation
                         </h2>
                         <div>
                             03/08/2024
@@ -65,7 +65,20 @@ export default function Stage() {
                         Pendant cette troisième semaine, j'ai pu commencer à préparer des cours que je ferais aux premières années pendant leurs ymmersions, comme par exemple une initiation au HTML / CSS. Ce cours est nécessaire car au cours d'une réunion, nous nous sommes aperçus que sur la suite de leurs études, les étudiants n'avaient pas forcément toutes les bonnes pratiques nécessaires au développement web. Il est donc important de leur apprendre au moins les bases sur une session de 3 heures pour qu'ils puissent par la suite s'améliorer.
                     </p>
                 </li>
+                <li className="flex flex-col space-y-2 items-center">
+                    <div className="flex space-x-6 text-blue items-center">
+                        <h2 className="border-b-2 w-fit  font-semibold text-xl px-1 text-center">
+                            Semaine 4 : Premiers problèmes !
+                        </h2>
+                        <div>
+                            10/08/2024
+                        </div>
+                    </div>
 
+                    <p className="text-pastel text-center tablet:mx-20 pc:mx-40">
+                        Cette semaine a démarrée avec un problème technique. Tous les PC de nos collaborateurs n'arrivaient plus a avoir accès à internet. Ce problème m'a permis d'aborder un nouvel aspect de ce poste : régler les problèmes comme celui-ci en contactant le support informatique. En tant que mentors informatiques, nous sommes le lien direct avec le support ce qui permet de régler les incidents comme celui-ci dans les meilleurs délais. Durant cette semaine, j'ai également pu participer à l'installation d'un troisième écran sur le poste d'un collaborateur, que ce soit sur la recherche du composant nécessaire à cette installation ou même l'installation directement.
+                    </p>
+                </li>
             </ul>
             <Footer />
         </main>
