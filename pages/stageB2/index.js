@@ -22,7 +22,7 @@ export default function Stage() {
                 </p>
             </div>
 
-            <ul className="p-10 space-y-4 text-lg">
+            <ul className="p-10 space-y-8 text-lg">
                 <li className="flex flex-col space-y-2 items-center">
                     <div className="flex space-x-6 text-blue items-center">
                         <h2 className="border-b-2 w-fit  font-semibold text-xl px-1 text-center">
@@ -77,6 +77,20 @@ export default function Stage() {
 
                     <p className="text-pastel text-center tablet:mx-20 pc:mx-40">
                         Cette semaine a démarrée avec un problème technique. Tous les PC de nos collaborateurs n'arrivaient plus a avoir accès à internet. Ce problème m'a permis d'aborder un nouvel aspect de ce poste : régler les problèmes comme celui-ci en contactant le support informatique. En tant que mentors informatiques, nous sommes le lien direct avec le support ce qui permet de régler les incidents comme celui-ci dans les meilleurs délais. Durant cette semaine, j'ai également pu participer à l'installation d'un troisième écran sur le poste d'un collaborateur, que ce soit sur la recherche du composant nécessaire à cette installation ou même l'installation directement.
+                    </p>
+                </li>
+                <li className="flex flex-col space-y-2 items-center">
+                    <div className="flex space-x-6 text-blue items-center">
+                        <h2 className="border-b-2 w-fit  font-semibold text-xl px-1 text-center">
+                            Semaine 5 : Mentor Academy
+                        </h2>
+                        <div>
+                            24/08/2024
+                        </div>
+                    </div>
+
+                    <p className="text-pastel text-center tablet:mx-20 pc:mx-40">
+                        Cette semaine avait lieu ma formation de mentor à Lyon. Cette formation me permet de connaitre le comportement à avoir avec les étudiants, comment gérer certains comportements et certaines situations difficiles. Durant cette formation, j'étais accompagné dans un premier temps de tous les mentors juniors d'Ynov. Nous avons participé à des mises en situations, eu des discussions sur nos différentes réactions et nos différents chemins de pensées sur des éléments qui peuvent nous arriver tout au long de l'année et nous avons également eu des parties un peu plus théoriques de la part de nos formatrices. Le jeudi, nous avons été rejoint de nos mentors seniors et avons vu les différents éléments que nous devrons mettre en place et comment le faire avec les étudiants tout au long de l'année.
                     </p>
                 </li>
             </ul>
