@@ -93,7 +93,24 @@ export default function Stage() {
                         Cette semaine avait lieu ma formation de mentor à Lyon. Cette formation me permet de connaitre le comportement à avoir avec les étudiants, comment gérer certains comportements et certaines situations difficiles. Durant cette formation, j'étais accompagné dans un premier temps de tous les mentors juniors d'Ynov. Nous avons participé à des mises en situations, eu des discussions sur nos différentes réactions et nos différents chemins de pensées sur des éléments qui peuvent nous arriver tout au long de l'année et nous avons également eu des parties un peu plus théoriques de la part de nos formatrices. Le jeudi, nous avons été rejoint de nos mentors seniors et avons vu les différents éléments que nous devrons mettre en place et comment le faire avec les étudiants tout au long de l'année.
                     </p>
                 </li>
+                <li className="flex flex-col space-y-2 items-center">
+                    <div className="flex space-x-6 text-blue items-center">
+                        <h2 className="border-b-2 w-fit  font-semibold text-xl px-1 text-center">
+                            Semaine 6 : L'arrivée des B1
+                        </h2>
+                        <div>
+                            07/09/2024
+                        </div>
+                    </div>
+
+                    <p className="text-pastel text-center tablet:mx-20 pc:mx-40">
+                        On y est ! Cela faisait 6 semaines que nous la préparions, la rentrée des premières années est enfin là. Durant cette semaine, j'ai pu rencontrer la promotion de mentorés que j'aurais toute l'année. Nous avons commencé par une présentation des mentors, puis appris à connaître chacun d'entre eux avec des rapides présentations. Ils ont pu participer à des petits jeux dans lesquels, nous mentors, étions juges. Pendant le reste de la semaine, nous avons pu identifier les étudiants avec des facilités et ceux avec des difficultés pour pouvoir les aider au mieux en les lançant sur la plateforme Ytrack afin de leur faire apprendre le Golang. Plusieurs profils se sont démarqués, ce qui fixe mon objectif à faire en sorte que chacun d'entre eux s'en sorte sans difficulté et soit préparé pour l'année à venir. La semaine s'est terminée avec leur premier examen sur Ytrack, suivi d'une rétrospective afin d'avoir leur avis et de connaître réellement les difficultés qu'ils ont pu avoir.
+                    </p>
+                </li>
             </ul>
+            <div className="flex text-pink text-xl my-8 mx-10 text-center">
+            Ce stage m'a permis de tester mes compétences, que ce soit techniques avec mon niveau en Golang pendant les Ymmersions ou en développement web en préparant l'initiation HTML / CSS, ou bien mes compétences pédagogiques avec l'accompagnement des premières années dans la découverte de l'informatique. J'ai pu découvrir l'envers du décors du poste de mentor chez Ynov et me préparer au mieux pour les années à venir. Après ce temps en stage, je me sens prêt, prêt à commencer cette nouvelle aventure qu'est l'alternance, mais surtout prêt à me surpasser et pousser mon apprentissage au maximum dans ce merveilleux domaine qu'est l'informatique.
+            </div>
             <Footer />
         </main>
     )
