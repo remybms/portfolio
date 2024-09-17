@@ -41,6 +41,7 @@ export default function Home() {
                 <Link href='https://www.linkedin.com/in/rémy-bamas-83ba7a170'><AiFillLinkedin size={50} /></Link>
                 <Link href="https://github.com/remybms"><AiFillGithub size={50} /></Link>
               </div>
+              <Link href='/stageB2' className='text-xl border-b-2 border-transparent px-1 hover:border-pastel active:border-pink m-5'>Mon stage de B2</Link>
 
             </div>
             <div className='pc:ml-20 tablet:mr-5 justify-center flex tablet:block'>
@@ -56,39 +57,43 @@ export default function Home() {
             <li className='relative flex text-js'>
               <IoLogoJavascript size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#E4C01A" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={130} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+                <circle cx="50" cy="50" r="35" stroke="#E4C01A" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={130} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
               </svg>
             </li>
             <li className='relative flex text-python'>
               <FaPython size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#3e74a2" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={170} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+                <circle cx="50" cy="50" r="35" stroke="#3e74a2" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={170} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
               </svg>
             </li>
             <li className='relative flex text-java'>
               <FaJava size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#d52827" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={190} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+                <circle cx="50" cy="50" r="35" stroke="#d52827" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={190} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
               </svg>
             </li>
             <li className='relative flex text-php'>
               <SiPhp size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#556096" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={150} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+                <circle cx="50" cy="50" r="35" stroke="#556096" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={150} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
               </svg>
             </li>
             <li className='relative flex text-c#'>
               <SiCsharp size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#6f0885" stroke-width="5" fill='transparent' strokeDasharray={315} strokeDashoffset={170} stroke-linecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+                <circle cx="50" cy="50" r="35" stroke="#6f0885" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={170} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
               </svg>
             </li>
 
           </ul>
 
           <div className=' text-2xl text-pastel p-2 border-4 rounded-lg'>
-            <button onClick={workDisplay} className='hover:bg-darkpink active:bg-pink active:text-darkblue p-2 rounded-md'>Expérience</button>
-            <button onClick={schoolDisplay} className='hover:bg-darkpink active:bg-pink active:text-darkblue p-2 rounded-md'>Formation</button>
+            <button onClick={workDisplay} className={` hover:bg-pink hover:text-darkblue p-2 rounded-md ${experience === 'work' ? 'bg-darkpink' : 'bg-darkblue'}`}>
+              Expérience
+            </button>
+            <button onClick={schoolDisplay} className={`hover:bg-pink hover:text-darkblue p-2 rounded-md ${experience === 'school' ? 'bg-darkpink' : 'bg-darkblue'}`}>
+              Formation
+            </button>
           </div>
           <div>
             {experience === "work" && <Work />}
