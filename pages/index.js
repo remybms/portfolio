@@ -41,8 +41,6 @@ export default function Home() {
                 <Link href='https://www.linkedin.com/in/rémy-bamas-83ba7a170'><AiFillLinkedin size={50} /></Link>
                 <Link href="https://github.com/remybms"><AiFillGithub size={50} /></Link>
               </div>
-              <Link href='/stageB2' className='text-xl border-b-2 border-transparent px-1 hover:border-pastel active:border-pink m-5'>Mon stage de B2</Link>
-
             </div>
             <div className='pc:ml-20 tablet:mr-5 justify-center flex tablet:block'>
               <img src='/pictures/moi.jpg' width="250" />
