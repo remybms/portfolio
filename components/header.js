@@ -9,7 +9,7 @@ export default function Header() {
                     Rémy
                 </div>
                 <div className="text-blue font-montserrat">
-                    Bamas
+                    Bamas Lunay
                 </div>
             </Link>
             <div className=" flex m-8 text-2xl h-min text-pink">
