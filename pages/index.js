@@ -43,7 +43,7 @@ export default function Home() {
               </div>
             </div>
             <div className='pc:ml-20 tablet:mr-5 justify-center flex tablet:block'>
-              <img src='/pictures/moi.jpg' width="250" />
+              <img src='/pictures/moi.jpg' alt='photo de profil' width="250" />
             </div>
           </div>
           <div className='animate-bounce flex justify-center text-blue self-end'>
