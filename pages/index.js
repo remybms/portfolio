@@ -38,7 +38,7 @@ export default function Home() {
               <div className='text-3xl animate-pulse'>Développeur Web</div>
               <div className='text-xl mx-4 phone:mx-0'>Je suis un développeur web full stack, passionné et expérimenté.</div>
               <div className='flex space-x-4'>
-                <Link href='www.linkedin.com/in/rémy-bamas-lunay-83ba7a170'><AiFillLinkedin size={50} /></Link>
+                <Link href='https://www.linkedin.com/in/rémy-bamas-lunay-83ba7a170'><AiFillLinkedin size={50} /></Link>
                 <Link href="https://github.com/remybms"><AiFillGithub size={50} /></Link>
               </div>
             </div>
