@@ -26,7 +26,6 @@ export default function Home() {
     <>
 
       <main className='min-h-screen bg-darkblue'>
-        <Header />
         <div className="flex-col mb-16">
           <div className='flex justify-center content-center text-pink mb-60'>
             <div className='grid-cols-1 gap-y-16 h-fit mt-32 mb-32'>
