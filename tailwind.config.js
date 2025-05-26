@@ -8,17 +8,11 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'darkblue': '#212E53',
       'blue': '#4A919E',
-      'pastel': '#BED3C3',
-      'pink': '#EBACA2',
+      'pink': '#f19e91',
       'darkpink': '#CE6A6B',
+      'darkgrey': '#222222',
       'transparent': 'transparent',
-      'js': '#E4C01A',
-      'java': '#d52827',
-      'python': '#3e74a2',
-      'php': '#556096',
-      'c#': '#6f0885'
     },
     screens: {
       'phone': '431px',
