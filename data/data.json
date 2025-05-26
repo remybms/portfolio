@@ -1,0 +1,108 @@
+{
+    "experiences": [
+        {
+            "_id": {
+                "$oid": "668e83a8095949b3a15ddd89"
+            },
+            "poste": "babysytting régulier",
+            "embauche": "09/2019",
+            "depart": "06/2021"
+        },
+        {
+            "_id": {
+                "$oid": "668e83fc095949b3a15ddd8a"
+            },
+            "poste": "Saisonnier Maraicher",
+            "entreprise": "Pomalie",
+            "lieu": "Machecoul",
+            "embauche": "07/2022",
+            "depart": "08/2022",
+            "mission1": "Récolte et conditionnement des tomates selon leurs types, leurs tailles et leurs couleurs",
+            "mission2": "Effeuillage des branches pour permettre la prise de soleil sur les plants de tomates"
+        },
+        {
+            "_id": {
+                "$oid": "668e84f4095949b3a15ddd8c"
+            },
+            "poste": "Hôte de caisse",
+            "entreprise": "E.Leclerc Océane",
+            "lieu": "Rezé",
+            "embauche": "10/2022",
+            "depart": "11/2022",
+            "mission1": "Comptage du fond de caisse, rangement de la monnaie et des espèces pour la mise au coffre",
+            "mission2": "Gestion des règlements clients (chèques, espèces, carte bancaire), remise des tickets de caisse",
+            "mission3": "Étroite collaboration avec le chef de caisse pour résoudre les problèmes et gérer les réclamations clients"
+        },
+        {
+            "_id": {
+                "$oid": "668e85be095949b3a15ddd8d"
+            },
+            "poste": "Chauffeur-livreur",
+            "entreprise": "Pat.transport",
+            "lieu": "Machecoul",
+            "embauche": "11/2022",
+            "depart": "10/2023",
+            "mission1": "Chargement du camion pour l'acheminement au centre de tri en veillant à ne pas endommager la palette et les journaux s'y trouvant",
+            "mission2": "Définition de l'itinéraire optimal en fonction du trafic routier et des travaux présents"
+        },
+        {
+            "_id": {
+                "$oid": "67062ec6166cdf192a2ae6ad"
+            },
+            "poste": "Mentor informatique",
+            "entreprise": "Ynov Campus",
+            "lieu": "Nantes",
+            "embauche": "07/2024",
+            "depart": "Aujourd'hui",
+            "mission1": "Accompagnement des premières et deuxièmes années dans leur apprentissage de l'informatique",
+            "mission2": "Participation à certaines soutenances de ces étudiants en accompagnement des intervenants"
+        }
+    ],
+    "formation": [
+        {
+            "_id": {
+                "$oid": "668e86ad095949b3a15ddd8e"
+            },
+            "diplome_ou_formation": "Baccalauréat Général",
+            "etablissement": "Lycée Saint Joseph",
+            "ville": "Machecoul",
+            "debut_ou_obtention": "2022",
+            "apprentissage": "Spécialités Mathématiques - Numériques et Sciences Informatiques",
+            "mention": "Mention Assez bien"
+        },
+        {
+            "_id": {
+                "$oid": "668e88da095949b3a15ddd90"
+            },
+            "diplome_ou_formation": "Bachelor informatique",
+            "etablissement": "Ynov Campus",
+            "ville": "Nantes",
+            "debut_ou_obtention": "09/2022",
+            "fin": "06/2025",
+            "apprentissage": "Apprentissage de divers langages informatiques tels que Javascript, Typescript ou encore Java"
+        }
+    ],
+    "projets" : [
+        {
+            "img": "https://res.cloudinary.com/dlwd2b47s/image/upload/v1748257722/portfolio/naapp.png",
+            "titre": "Naapp",
+            "description": "Projet en Next.js réalisé pour un projet Ydays.",
+            "lieu": "Réalisé à Nantes Ynov Campus.",
+            "live": "https://naapp.vercel.app",
+            "github": "https://github.com/remybms/naapp"
+        },
+        {
+            "img": "https://res.cloudinary.com/dlwd2b47s/image/upload/v1748007335/portfolio/groupietracker.png",
+            "titre": "Groupie Tracker",
+            "description": "Projet avec serveur Go se liant à une API.",
+            "lieu": "Réalisé à Nantes Ynov Campus.",
+            "github": "https://github.com/remybms/GroupieTracker"
+        },
+        {
+            "img": "https://res.cloudinary.com/dlwd2b47s/image/upload/v1748007335/portfolio/briscards.png",
+            "titre": "Les Briscards",
+            "description": "Projet en Next.js réalisé en groupe.",
+            "lieu": "Réalisé en groupe à Nantes Ynov Campus."
+        }
+    ]
+}
