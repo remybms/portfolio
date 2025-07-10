@@ -4,7 +4,7 @@ import Hamburger from "./hamburger";
 export default function Header() {
     return (
         <>
-            <div className="sticky top-0 justify-around max-w-screen bg-darkblue hidden tablet:flex z-10">
+            <div className="sticky top-0 justify-around max-w-screen bg-darkgrey hidden tablet:flex z-10">
             <Link href="/" className="flex m-8 text-2xl">
                 <div className="text-pink font-montserrat mr-2">
                     Rémy

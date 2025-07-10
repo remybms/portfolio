@@ -1,31 +1,9 @@
 import React from "react";
-
-interface Formation {
-    diplome_ou_formation: string;
-    etablissement: string;
-    ville: string;
-    debut_ou_obtention: string;
-    fin: string;
-    apprentissage: string;
-    mention: string;
-}
+import formationData from "../../data/data.json"
 
 export default function School() {
-    const [data, setData] = React.useState<Formation[]>([]);
 
-    React.useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('/api/formation');
-                const apiData = await response.json();
-                setData(apiData);
-            } catch (error) {
-                console.error('Erreur lors de la récupération des données de l\'API', error);
-            }
-        };
-
-        fetchData();
-    }, []);
+    const data = formationData.formation
 
     return (
         <div className="flex flex-col-reverse text-center m-10 space-y-14 space-y-reverse">
