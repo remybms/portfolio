@@ -66,18 +66,21 @@ export default function Home() {
               <IoLogoJavascript size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
                 <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={110} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+
               </svg>
             </li>
             <li className='relative flex'>
               <FaPython size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
                 <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={170} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+
               </svg>
             </li>
             <li className='relative flex'>
               <FaJava size={60} className='m-10' />
               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
                 <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={190} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
+
               </svg>
             </li>
             <li className='relative flex'>
