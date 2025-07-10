@@ -32,21 +32,31 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Header />
-        <div className="grid grid-cols-1 content-around h-screen">
-          <div className='flex flex-col-reverse tablet:flex-row justify-center items-center content-center text-pink '>
-            <div className='flex flex-col h-fit space-y-5 pc:my-32 items-center text-center'>
-              <div className='text-3xl'>Développeur Web</div>
-              <div className='text-xl mx-4 phone:mx-0'>Je suis un développeur web full stack, passionné et expérimenté.</div>
+        <div className="grid grid-cols-1 text-center pc:text-start content-around h-screen">
+          <div className='flex flex-col pc:flex-row justify-center items-center content-center text-pink '>
+            <div className='pc:mr-20 pc:mx-5 mb-2 pc:mb-0 justify-center flex tablet:w-2/5 w-3/5 pc:w-1/6 pc:block'>
+              <img src='/pictures/moi.jpg' alt='photo de profil' className='rounded-3xl' />
+            </div>
+            <div className='flex flex-col h-fit space-y-5 items-center pc:items-start pc:my-32'>
+              <div className='text-3xl font-bold'>Rémy Bamas Lunay - Développeur Web</div>
+              <div>
+                <div className='text-2xl font-semibold'>Qui suis-je ?</div>
+                <div className='text-xl mx-4 phone:mx-0'>Je suis un développeur web full stack, passionné et expérimenté.</div>
+              </div>
+              <div>
+                <div className='text-2xl font-semibold'>Mes passions</div>
+                <ul className='text-xl list-disc ml-5'>
+                  <li>Sports mécaniques</li>
+                  <li>Breakdance</li>
+                </ul>
+              </div>
               <div className='flex space-x-4'>
                 <Link href='https://www.linkedin.com/in/rémy-bamas-lunay-83ba7a170'><AiFillLinkedin size={50} /></Link>
                 <Link href="https://github.com/remybms"><AiFillGithub size={50} /></Link>
               </div>
             </div>
-            <div className='pc:ml-20 tablet:mr-5 justify-center flex tablet:block'>
-              <img src='/pictures/moi.jpg' alt='photo de profil' className='rounded-3xl' width="250" />
-            </div>
           </div>
-          <div className='animate-bounce hidden tablet:flex justify-center text-blue self-end'>
+          <div className='animate-bounce hidden tablet:flex justify-center pc:mb-5 text-blue self-end'>
             <a href='#formation'><AiOutlineArrowDown size={42} /></a>
           </div>
         </div>

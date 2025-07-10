@@ -30,7 +30,7 @@ export default function Portfolio() {
               </button>
             ))}
           </div>
-          <div className='pc:col-span-2'>
+          <div className='pc:col-span-2 pc:flex pc:justify-center'>
             {data.map((project, index) => (
               <div key={index} className={`${openIndex === index ? 'flex flex-col pc:w-2/3 justify-self-end items-start space-y-4' : 'hidden'}`}>
                 <img src={project.img} alt={project.titre} className='w-full object-cover' />
@@ -47,8 +47,8 @@ export default function Portfolio() {
                     </p>
                   </div>
                   <div className='flex h-fit space-x-2 tablet:justify-end'>
-                    {project.github && <Link href={project.github} className='p-2 border-2 rounded-lg px-4'>Github</Link>}
-                    {project.live && <Link href={project.live} className='p-2 border-2 rounded-lg px-4'>Live</Link>}
+                    {project.github && <Link href={project.github} className='p-2 border-2 rounded-lg px-4' target='_blank'>Github</Link>}
+                    {project.live && <Link href={project.live} className='p-2 border-2 rounded-lg px-4' target='_blank'>Live</Link>}
                   </div>
                 </div>
               </div>
