@@ -23,7 +23,7 @@ export default function Work() {
                 {displayedData.map((item) => (
                     <div className="grid grid-cols-1 text-pink justify-items-center items-center space-y-4 text-lg text-center">
                         <h1 className="text-2xl font-bold text-darkpink">{item.poste}{item.entreprise != null ? ", " : ""}{item.entreprise}</h1>
-                        <div className="flex w-1/2 tablet:w-fit justify-items-center">
+                        <div className="flex justify-items-center">
                             <div className="tablet:w-fit tablet:justify-self-end">{item.embauche}</div>
                             <div className="mx-2">-</div>
                             <div className="tablet:w-fit">{item.depart}</div>
