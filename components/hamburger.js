@@ -10,17 +10,19 @@ function Hamburger() {
             position: 'absolute',
             width: '42px',
             height: '42px',
-            marginLeft: '1.25rem',
-            color: '#4A919E'
+            color: '#4A919E',
+            top: '0.75rem',
+            left: '0.75rem'
         },
         bmMenuWrap: {
             width: '50%',
-            height: '100%',
-            marginTop: '10%',
+            height: '93%',
             paddingTop: '10%',
             paddingLeft: '5%',
+            top: '3rem',
             backgroundColor: '#CE6A6B',
-            color: '#212E53'
+            color: '#212E53',
+            borderRadius: '0px 15px 15px 0px',
         },
         bmCrossButton: {
             height: '30px',
@@ -33,14 +35,18 @@ function Hamburger() {
     return (
         <div>
             <Menu customBurgerIcon={<IoReorderThree size={42} />} styles={styles} customCrossIcon={<ImCross size={30} />}>
-                    <Link href="mailto:bamasremy43@gmail.com" className='w-fit mb-2'>
-                        Me Contacter
-                    </Link>
-                    <Link href="/portfolio" className='w-fit'>
-                        Portfolio
-                    </Link>
+            
                     <Link href='/' className="w-fit mt-2">
                         À propos
+                    </Link>
+                    <Link href='/#formation' className="w-fit mt-2">
+                        Expérience
+                    </Link>
+                    <Link href="/#portfolio" className='w-fit mt-2'>
+                        Portfolio
+                    </Link>
+                    <Link href="mailto:bamasremy43@gmail.com" className='w-fit mt-2'>
+                        Me Contacter
                     </Link>
             </Menu>
         </div>

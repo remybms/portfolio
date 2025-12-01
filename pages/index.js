@@ -11,6 +11,7 @@ import React from 'react'
 import Work from '@/components/formation/work'
 import School from '@/components/formation/school'
 import Footer from '@/components/footer'
+import Portfolio from '@/components/portfolio';
 
 export default function Home() {
 
@@ -32,7 +33,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Header />
-        <div className="grid grid-cols-1 text-center pc:text-start content-around h-screen">
+        <div className="grid grid-cols-1 text-center pc:text-start">
           <div className='flex flex-col pc:flex-row justify-center items-center content-center text-pink '>
             <div className='pc:mr-20 pc:mx-5 mb-2 pc:mb-0 justify-center flex tablet:w-2/5 w-3/5 pc:w-1/6 pc:block'>
               <img src='/pictures/moi.jpg' alt='photo de profil' className='rounded-3xl' />
@@ -45,62 +46,40 @@ export default function Home() {
               </div>
               <div>
                 <div className='text-2xl font-semibold'>Mes passions</div>
-                <ul className='text-xl list-disc ml-5'>
+                <ul className='text-xl list-disc list-inside tablet:ml-5'>
                   <li>Sports mécaniques</li>
                   <li>Breakdance</li>
                 </ul>
               </div>
               <div className='flex space-x-4'>
-                <Link href='https://www.linkedin.com/in/rémy-bamas-lunay-83ba7a170'><AiFillLinkedin size={50} /></Link>
-                <Link href="https://github.com/remybms"><AiFillGithub size={50} /></Link>
+                <Link href='https://www.linkedin.com/in/rémy-bamas-lunay-83ba7a170' target='_blank' className='hover:text-darkpink'><AiFillLinkedin size={50} /></Link>
+                <Link href="https://github.com/remybms" target='_blank'><AiFillGithub size={50} /></Link>
               </div>
             </div>
-          </div>
-          <div className='animate-bounce hidden tablet:flex justify-center pc:mb-5 text-blue self-end'>
-            <a href='#formation'><AiOutlineArrowDown size={42} /></a>
           </div>
         </div>
         <div id='formation' className='flex flex-col max-w-screen items-center tablet:pt-20'>
           <ul className='grid grid-cols-2 tablet:grid-cols-3 pc:flex pc:flex-row pc:space-x-10 mb-14 text-darkpink'>
             <li className='relative flex'>
               <IoLogoJavascript size={60} className='m-10' />
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={110} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
-
-              </svg>
             </li>
             <li className='relative flex'>
-              <FaPython size={60} className='m-10' />
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={170} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
-
-              </svg>
+              <FaPython size={60} className='m-10 text-blue' />
             </li>
             <li className='relative flex'>
               <FaJava size={60} className='m-10' />
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={190} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
-
-              </svg>
             </li>
             <li className='relative flex'>
-              <SiPhp size={60} className='m-10' />
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={130} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
-              </svg>
+              <SiPhp size={60} className='m-10 text-blue' />
             </li>
             <li className='col-start-1 col-end-3 tablet:col-start-2 tablet:col-end-2 flex justify-center items-center'>
               <div className='relative flex'>
                 <SiCsharp size={60} className='m-10' />
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                  <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={170} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
-                </svg>
               </div>
             </li>
-
           </ul>
 
-          <div className=' text-2xl text-blue p-2 border-4 rounded-lg'>
+          <div className='text-2xl text-blue p-2 border-4 rounded-lg'>
             <button onClick={workDisplay} className={` hover:bg-pink hover:text-darkgrey p-2 rounded-md ${experience === 'work' ? 'bg-darkpink text-darkgrey' : 'bg-darkgrey text-pink'}`}>
               Expérience
             </button>
@@ -114,7 +93,9 @@ export default function Home() {
           </div>
 
         </div>
-
+        <div id="portfolio">
+          <Portfolio />
+        </div>
         <Footer />
       </main></>
   )

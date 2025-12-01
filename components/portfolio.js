@@ -1,6 +1,3 @@
-import Footer from '@/components/footer'
-import Header from '@/components/header'
-import Head from 'next/head'
 import projects from '@/data/data.json'
 import React from 'react'
 import Link from 'next/link'
@@ -16,12 +13,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <main className='flex flex-col min-h-screen bg-darkgrey justify-between'>
-        <Head>
-          <title>Rémy Bamas Lunay - Portfolio</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Header />
+      <main className='flex flex-col bg-darkgrey justify-between'>
         <div className="grid pc:grid-cols-3 tablet:mx-20 mx-5 grid-cols-1 items-center justify-items-center space-y-5 text-pink">
           <div className='flex flex-col tablet:space-y-5 space-y-2 text-xl font-semibold justify-self-start'>
             {data.map((project, index) => (
@@ -55,7 +47,6 @@ export default function Portfolio() {
             ))}
           </div>
         </div>
-        <Footer />
       </main></>
   )
 }

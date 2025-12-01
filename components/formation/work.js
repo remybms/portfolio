@@ -21,20 +21,19 @@ export default function Work() {
         <>
             <div className="flex flex-col-reverse text-center m-10 space-y-14 space-y-reverse">
                 {displayedData.map((item) => (
-                    <div className="grid grid-cols-2 text-pink justify-items-center items-center space-y-4 text-lg">
-                        <h1 className="col-span-2 text-2xl font-bold text-darkpink">{item.poste}</h1>
-                        <div className="flex flex-col text-xl">
-                            <div>{item.entreprise}</div>
-                            <div>{item.lieu}</div>
-                        </div>
-                        <div className="grid grid-cols-1 tablet:grid-cols-[1fr_auto_1fr] w-1/2 tablet:w-fit justify-items-center text-xl">
+                    <div className="grid grid-cols-1 text-pink justify-items-center items-center space-y-4 text-lg text-center">
+                        <h1 className="text-2xl font-bold text-darkpink">{item.poste}{item.entreprise != null ? ", " : ""}{item.entreprise}</h1>
+                        <div className="flex w-1/2 tablet:w-fit justify-items-center">
                             <div className="tablet:w-fit tablet:justify-self-end">{item.embauche}</div>
                             <div className="mx-2">-</div>
                             <div className="tablet:w-fit">{item.depart}</div>
                         </div>
-                        <div className="col-span-2">{item.mission1}</div>
-                        <div className="col-span-2">{item.mission2}</div>
-                        <div className="col-span-2">{item.mission3}</div>
+                        <ul className="text-xl space-y-2 list-disc list-inside tablet:w-4/5">
+                            {item.mission1 != null ?<li>{item.mission1}</li> : ""}
+                            {item.mission2 != null ?<li>{item.mission2}</li> : ""}
+                            {item.mission3 != null ?<li>{item.mission3}</li> : ""}
+                        </ul>
+
                     </div>
                 ))}
             </div>
