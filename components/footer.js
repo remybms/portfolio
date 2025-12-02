@@ -1,6 +1,8 @@
+import styles from '@/styles/Static.module.css'
+
 export default function Footer(){
     return(
-        <div className="flex text-xl text-darkpink max-w-screen justify-center p-8 border-t-2 border-blue mt-10">
+        <div class={styles.footer}>
             © 2025 Rémy Bamas Lunay. Tous droits réservés.
         </div>
     )
