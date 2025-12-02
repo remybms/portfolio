@@ -3,9 +3,10 @@ import { slide as Menu } from 'react-burger-menu'
 import { IoReorderThree } from 'react-icons/io5'
 import { ImCross } from "react-icons/im";
 import Link from 'next/link';
+import styles from "@/styles/Static.module.css"
 
 function Hamburger() {
-    var styles = {
+    var style = {
         bmBurgerButton: {
             position: 'absolute',
             width: '42px',
@@ -34,18 +35,18 @@ function Hamburger() {
     }
     return (
         <div>
-            <Menu customBurgerIcon={<IoReorderThree size={42} />} styles={styles} customCrossIcon={<ImCross size={30} />}>
+            <Menu customBurgerIcon={<IoReorderThree size={42} />} styles={style} customCrossIcon={<ImCross size={30} />}>
             
-                    <Link href='/' className="w-fit mt-2">
+                    <Link href='/' class={styles.hamburgerLink}>
                         À propos
                     </Link>
-                    <Link href='/#formation' className="w-fit mt-2">
+                    <Link href='/#formation' class={styles.hamburgerLink}>
                         Expérience
                     </Link>
-                    <Link href="/#portfolio" className='w-fit mt-2'>
+                    <Link href="/#portfolio" class={styles.hamburgerLink}>
                         Portfolio
                     </Link>
-                    <Link href="mailto:bamasremy43@gmail.com" className='w-fit mt-2'>
+                    <Link href="mailto:bamasremy43@gmail.com" class={styles.hamburgerLink}>
                         Me Contacter
                     </Link>
             </Menu>

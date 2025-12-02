@@ -23,7 +23,7 @@ export default function Portfolio() {
           ))}
         </div>
         {data.map((project, index) => (
-          <div key={index} className={openIndex === index ? styles.selectedProject : styles.notSelectedProject}>
+          <div key={index} class={openIndex === index ? styles.selectedProject : styles.notSelectedProject}>
             <img src={project.img} alt={project.titre} class={styles.img} />
             <div class={styles.project}>
               <div class={styles.description}>

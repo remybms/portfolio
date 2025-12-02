@@ -20,9 +20,9 @@ export default function Work() {
 
     return (
         <>
-            <div className="flex flex-col-reverse text-center m-10 space-y-14 space-y-reverse">
+            <div class={styles.formation}>
                 {displayedData.map((item) => (
-                    <div className="grid grid-cols-1 text-pink justify-items-center items-center space-y-4 text-lg text-center">
+                    <div class={styles.experience}>
                         <h1 class={styles.title}>{item.poste}{item.entreprise != null ? ", " : ""}{item.entreprise}</h1>
                         <div class={styles.dates}>
                             <div class={styles.date}>{item.embauche}</div>
@@ -30,19 +30,17 @@ export default function Work() {
                             <div class={styles.date}>{item.depart}</div>
                         </div>
                         <ul class={styles.missions}>
-                            {item.mission1 != null ?<li>{item.mission1}</li> : ""}
-                            {item.mission2 != null ?<li>{item.mission2}</li> : ""}
-                            {item.mission3 != null ?<li>{item.mission3}</li> : ""}
+                            {item.mission1 != null ? <li>{item.mission1}</li> : ""}
+                            {item.mission2 != null ? <li>{item.mission2}</li> : ""}
+                            {item.mission3 != null ? <li>{item.mission3}</li> : ""}
                         </ul>
 
                     </div>
                 ))}
             </div>
-            <div className="flex w-full justify-center text-xl font-semibold text-darkpink mb-10 mt-4">
-                <button onClick={displayMore} className="tablet:border-b-2 border-transparent hover:border-darkpink px-1">
-                    {fullData ? "Afficher moins ⏶" : "Afficher plus ⏷"}
-                </button>
-            </div>
+            <button onClick={displayMore} class={styles.button}>
+                {fullData ? "Afficher moins ⏶" : "Afficher plus ⏷"}
+            </button>
 
         </>
     )

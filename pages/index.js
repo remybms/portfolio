@@ -58,21 +58,19 @@ export default function Home() {
         <div id='formation' class={styles.formation}>
           <ul class={styles.languagesList}>
             <li class={styles.language}>
-              <IoLogoJavascript size={60} className='m-10' />
+              <IoLogoJavascript size={60}/>
+            </li>
+            <li class={styles.languageBlue}>
+              <FaPython size={60} />
             </li>
             <li class={styles.language}>
-              <FaPython size={60} className='m-10 text-blue' />
+              <FaJava size={60} />
             </li>
-            <li class={styles.language}>
-              <FaJava size={60} className='m-10' />
+            <li class={styles.languageBlue}>
+              <SiPhp size={60} />
             </li>
-            <li class={styles.language}>
-              <SiPhp size={60} className='m-10 text-blue' />
-            </li>
-            <li className='col-start-1 col-end-3 tablet:col-start-2 tablet:col-end-2 flex justify-center items-center'>
-              <div class={styles.language}>
-                <SiCsharp size={60} className='m-10' />
-              </div>
+            <li class={styles.lastLanguage}>
+                <SiCsharp size={60}/>
             </li>
           </ul>
 
