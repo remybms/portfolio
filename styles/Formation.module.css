@@ -1,0 +1,30 @@
+.title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #CE6A6B;
+}
+
+.dates {
+    display: flex;
+    justify-items: center;
+    gap: 0.5rem;
+}
+
+.missions {
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+@media (min-width: 720px) {
+    .date {
+        width: fit-content;
+    }
+
+    .missions {
+        width: 80%;
+    }
+}

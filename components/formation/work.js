@@ -1,5 +1,6 @@
 import React from "react";
 import workData from "@/data/data.json"
+import styles from '@/styles/Formation.module.css'
 
 
 export default function Work() {
@@ -22,13 +23,13 @@ export default function Work() {
             <div className="flex flex-col-reverse text-center m-10 space-y-14 space-y-reverse">
                 {displayedData.map((item) => (
                     <div className="grid grid-cols-1 text-pink justify-items-center items-center space-y-4 text-lg text-center">
-                        <h1 className="text-2xl font-bold text-darkpink">{item.poste}{item.entreprise != null ? ", " : ""}{item.entreprise}</h1>
-                        <div className="flex justify-items-center">
-                            <div className="tablet:w-fit tablet:justify-self-end">{item.embauche}</div>
-                            <div className="mx-2">-</div>
-                            <div className="tablet:w-fit">{item.depart}</div>
+                        <h1 class={styles.title}>{item.poste}{item.entreprise != null ? ", " : ""}{item.entreprise}</h1>
+                        <div class={styles.dates}>
+                            <div class={styles.date}>{item.embauche}</div>
+                            <div>-</div>
+                            <div class={styles.date}>{item.depart}</div>
                         </div>
-                        <ul className="text-xl space-y-2 list-disc list-inside tablet:w-4/5">
+                        <ul class={styles.missions}>
                             {item.mission1 != null ?<li>{item.mission1}</li> : ""}
                             {item.mission2 != null ?<li>{item.mission2}</li> : ""}
                             {item.mission3 != null ?<li>{item.mission3}</li> : ""}
