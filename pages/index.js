@@ -28,57 +28,57 @@ export default function Home() {
   return (
     <>
 
-      <main class={styles.main}>
+      <main className={styles.main}>
         <Head>
           <title>Rémy Bamas Lunay</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Header />
-        <div class={styles.presentationBloc}>
-          <img src='/pictures/moi.jpg' alt='photo de profil' class={styles.img} />
-          <div class={styles.presentation}>
-            <div class={styles.name}>Rémy Bamas Lunay - Développeur Web</div>
+        <div className={styles.presentationBloc}>
+          <img src='/pictures/moi.jpg' alt='photo de profil' className={styles.img} />
+          <div className={styles.presentation}>
+            <div className={styles.name}>Rémy Bamas Lunay - Développeur Web</div>
             <div>
-              <div class={styles.subtitle}>Qui suis-je ?</div>
-              <div class={styles.description}>Je suis un développeur web full stack, passionné et expérimenté.</div>
+              <div className={styles.subtitle}>Qui suis-je ?</div>
+              <div className={styles.description}>Je suis un développeur web full stack, passionné et expérimenté.</div>
             </div>
             <div>
-              <div class={styles.subtitle}>Mes passions</div>
-              <ul class={styles.passionsList}>
+              <div className={styles.subtitle}>Mes passions</div>
+              <ul className={styles.passionsList}>
                 <li>Sports mécaniques</li>
                 <li>Breakdance</li>
               </ul>
             </div>
-            <div class={styles.links}>
-              <Link href='https://www.linkedin.com/in/rémy-bamas-lunay-83ba7a170' target='_blank' class={styles.logo}><AiFillLinkedin size={50} /></Link>
-              <Link href="https://github.com/remybms" target='_blank' class={styles.logo}><AiFillGithub size={50} /></Link>
+            <div className={styles.links}>
+              <Link href='https://www.linkedin.com/in/rémy-bamas-lunay-83ba7a170' target='_blank' className={styles.logo}><AiFillLinkedin size={50} /></Link>
+              <Link href="https://github.com/remybms" target='_blank' className={styles.logo}><AiFillGithub size={50} /></Link>
             </div>
           </div>
         </div>
-        <div id='formation' class={styles.formation}>
-          <ul class={styles.languagesList}>
-            <li class={styles.language}>
+        <div id='formation' className={styles.formation}>
+          <ul className={styles.languagesList}>
+            <li className={styles.language}>
               <IoLogoJavascript size={60}/>
             </li>
-            <li class={styles.languageBlue}>
+            <li className={styles.languageBlue}>
               <FaPython size={60} />
             </li>
-            <li class={styles.language}>
+            <li className={styles.language}>
               <FaJava size={60} />
             </li>
-            <li class={styles.languageBlue}>
+            <li className={styles.languageBlue}>
               <SiPhp size={60} />
             </li>
-            <li class={styles.lastLanguage}>
+            <li className={styles.lastLanguage}>
                 <SiCsharp size={60}/>
             </li>
           </ul>
 
-          <div class={styles.selector}>
-            <button onClick={workDisplay} class={experience === 'work' ? styles.selected : styles.notselected}>
+          <div className={styles.selector}>
+            <button onClick={workDisplay} className={experience === 'work' ? styles.selected : styles.notselected}>
               Expérience
             </button>
-            <button onClick={schoolDisplay} class={experience === 'school' ? styles.selected : styles.notselected}>
+            <button onClick={schoolDisplay} className={experience === 'school' ? styles.selected : styles.notselected}>
               Formation
             </button>
           </div>

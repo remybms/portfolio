@@ -5,23 +5,23 @@ import styles from '@/styles/Static.module.css'
 export default function Header() {
     return (
         <>
-            <div class={styles.header}>
-                <div class={styles.hamburger}>
+            <div className={styles.header}>
+                <div className={styles.hamburger}>
                     <Hamburger />
                 </div>
-                <Link href="/" class={styles.name}>
-                    <div class={styles.firstname}>
+                <Link href="/" className={styles.name}>
+                    <div className={styles.firstname}>
                         Rémy
                     </div>
-                    <div class={styles.lastname}>
+                    <div className={styles.lastname}>
                         Bamas Lunay
                     </div>
                 </Link>
-                <div class={styles.links}>
-                    <Link class={styles.link} href="/">À propos</Link>
-                    <Link class={styles.link} href="/#formation">Expérience</Link>
-                    <Link class={styles.link} href="/#portfolio">Portfolio</Link>
-                    <Link class={styles.link} href="mailto:bamasremy43@gmail.com">Me contacter</Link>
+                <div className={styles.links}>
+                    <Link className={styles.link} href="/">À propos</Link>
+                    <Link className={styles.link} href="/#formation">Expérience</Link>
+                    <Link className={styles.link} href="/#portfolio">Portfolio</Link>
+                    <Link className={styles.link} href="mailto:bamasremy43@gmail.com">Me contacter</Link>
                 </div>
             </div></>
     )

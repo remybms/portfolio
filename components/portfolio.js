@@ -14,20 +14,20 @@ export default function Portfolio() {
 
   return (
     <>
-      <main class={styles.portfolio}>
-        <div class={styles.selector}>
+      <main className={styles.portfolio}>
+        <div className={styles.selector}>
           {data.map((project, index) => (
-            <button key={index} onClick={() => toggleProject(index)} class={openIndex === index ? styles.selectedTitle : styles.notSelectedTitle}>
+            <button key={index} onClick={() => toggleProject(index)} className={openIndex === index ? styles.selectedTitle : styles.notSelectedTitle}>
               {project.titre}
             </button>
           ))}
         </div>
         {data.map((project, index) => (
-          <div key={index} class={openIndex === index ? styles.selectedProject : styles.notSelectedProject}>
-            <img src={project.img} alt={project.titre} class={styles.img} />
-            <div class={styles.project}>
-              <div class={styles.description}>
-                <div class={styles.title}>
+          <div key={index} className={openIndex === index ? styles.selectedProject : styles.notSelectedProject}>
+            <img src={project.img} alt={project.titre} className={styles.img} />
+            <div className={styles.project}>
+              <div className={styles.description}>
+                <div className={styles.title}>
                   {project.titre}
                 </div>
                 <p>
@@ -37,9 +37,9 @@ export default function Portfolio() {
                   {project.lieu}
                 </p>
               </div>
-              <div class={styles.links}>
-                {project.github && <Link href={project.github} class={styles.link} target='_blank'>Github</Link>}
-                {project.live && <Link href={project.live} class={styles.link} target='_blank'>Live</Link>}
+              <div className={styles.links}>
+                {project.github && <Link href={project.github} className={styles.link} target='_blank'>Github</Link>}
+                {project.live && <Link href={project.live} className={styles.link} target='_blank'>Live</Link>}
               </div>
             </div>
           </div>

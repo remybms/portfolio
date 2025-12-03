@@ -37,16 +37,16 @@ function Hamburger() {
         <div>
             <Menu customBurgerIcon={<IoReorderThree size={42} />} styles={style} customCrossIcon={<ImCross size={30} />}>
             
-                    <Link href='/' class={styles.hamburgerLink}>
+                    <Link href='/' className={styles.hamburgerLink}>
                         À propos
                     </Link>
-                    <Link href='/#formation' class={styles.hamburgerLink}>
+                    <Link href='/#formation' className={styles.hamburgerLink}>
                         Expérience
                     </Link>
-                    <Link href="/#portfolio" class={styles.hamburgerLink}>
+                    <Link href="/#portfolio" className={styles.hamburgerLink}>
                         Portfolio
                     </Link>
-                    <Link href="mailto:bamasremy43@gmail.com" class={styles.hamburgerLink}>
+                    <Link href="mailto:bamasremy43@gmail.com" className={styles.hamburgerLink}>
                         Me Contacter
                     </Link>
             </Menu>
