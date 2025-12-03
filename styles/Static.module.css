@@ -4,6 +4,8 @@
     max-width: 100vw;
     background-color: #222222;
     z-index: 10;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .hamburger {
@@ -12,8 +14,6 @@
 
 .name {
     display: flex;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     font-size: 1.5rem;
     line-height: 2rem;
     width: 100vw;
@@ -30,8 +30,6 @@
 }
 
 .links {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     font-size: 1.5rem;
     line-height: 2rem;
     height: min-content;
@@ -81,8 +79,6 @@
 
     .name {
         width: fit-content;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
     }
 
     .links {
