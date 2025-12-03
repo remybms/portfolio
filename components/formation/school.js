@@ -8,8 +8,8 @@ export default function School() {
 
     return (
         <div className={styles.formation}>
-            {data.map((item) => (
-                <div className={styles.experience}>
+            {data.map((item, index) => (
+                <div className={styles.experience} key={index}>
                     <h1 className={styles.title}>{item.diplome_ou_formation}</h1>
                     <div className={styles.etablissement}>{item.etablissement}{item.ville != null ? ", " : ""}{item.ville}</div>
                     <div className={styles.dates}>
