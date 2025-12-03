@@ -20,25 +20,25 @@ export default function Work() {
 
     return (
         <>
-            <div class={styles.formation}>
-                {displayedData.map((item) => (
-                    <div class={styles.experience}>
-                        <h1 class={styles.title}>{item.poste}{item.entreprise != null ? ", " : ""}{item.entreprise}</h1>
-                        <div class={styles.dates}>
-                            <div class={styles.date}>{item.embauche}</div>
+            <div className={styles.formation}>
+                {displayedData.map((item, index) => (
+                    <div className={styles.experience} key={index}>
+                        <h1 className={styles.title}>{item.poste}{item.entreprise != null ? ", " : ""}{item.entreprise}</h1>
+                        <div className={styles.dates}>
+                            <div className={styles.date}>{item.embauche}</div>
                             <div>-</div>
-                            <div class={styles.date}>{item.depart}</div>
+                            <div className={styles.date}>{item.depart}</div>
                         </div>
-                        <ul class={styles.missions}>
-                            {item.mission1 != null ? <li>{item.mission1}</li> : ""}
-                            {item.mission2 != null ? <li>{item.mission2}</li> : ""}
-                            {item.mission3 != null ? <li>{item.mission3}</li> : ""}
+                        <ul className={styles.missions}>
+                            {item.mission1 && <li>{item.mission1}</li>}
+                            {item.mission2 && <li>{item.mission2}</li>}
+                            {item.mission3 && <li>{item.mission3}</li>}
                         </ul>
 
                     </div>
                 ))}
             </div>
-            <button onClick={displayMore} class={styles.button}>
+            <button onClick={displayMore} className={styles.button}>
                 {fullData ? "Afficher moins ⏶" : "Afficher plus ⏷"}
             </button>
 
