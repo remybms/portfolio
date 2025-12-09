@@ -1,0 +1,125 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    background-color: #222222;
+    justify-content: space-between;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    align-items: center;
+    justify-items: center;
+    gap: 1.25rem;
+    color: #F19E91;
+}
+
+.selector {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.selectedTitle{
+    border-bottom-width : 2px;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    width: fit-content;
+    border-color: #F19E91;
+}
+
+.notSelectedTitle{
+    border-bottom-width : 2px;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    width: fit-content;
+    border-color: transparent;
+}
+
+.selectedProject{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.notSelectedProject {
+    display: none;
+}
+
+.img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.project{
+    display: grid;
+    width: 100%;
+}
+
+.links{
+    display: flex;
+    height: fit-content;
+    gap: 0.5rem;
+}
+
+.link{
+    padding: 0.5rem;
+    border-width: 2px;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-color: #F19E91;
+}
+
+.description {
+    justify-items: start;
+}
+
+.title{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #CE6A6B;
+}
+
+
+@media (min-width: 720px) {
+    .portfolio{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .selector {
+        gap: 1.25rem;
+    }
+
+    .project{
+        grid-template-columns: auto auto;
+    }
+
+    .links{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1310px) {
+    .portfolio {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .notSelectedTitle:hover{
+        border-color: #CE6A6B;
+    }
+
+    .selectedProject{
+        justify-content: center;
+        grid-column: span 2 / span 2;
+        width: 66.66667%;
+    }
+
+    .selector{
+        justify-self: center;
+    }
+}

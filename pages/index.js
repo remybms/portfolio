@@ -11,6 +11,8 @@ import React from 'react'
 import Work from '@/components/formation/work'
 import School from '@/components/formation/school'
 import Footer from '@/components/footer'
+import Portfolio from '@/components/portfolio';
+import styles from '@/styles/Home.module.css'
 
 export default function Home() {
 
@@ -26,85 +28,57 @@ export default function Home() {
   return (
     <>
 
-      <main className='min-h-screen bg-darkgrey'>
+      <main className={styles.main}>
         <Head>
           <title>Rémy Bamas Lunay</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Header />
-        <div className="grid grid-cols-1 text-center pc:text-start content-around h-screen">
-          <div className='flex flex-col pc:flex-row justify-center items-center content-center text-pink '>
-            <div className='pc:mr-20 pc:mx-5 mb-2 pc:mb-0 justify-center flex tablet:w-2/5 w-3/5 pc:w-1/6 pc:block'>
-              <img src='/pictures/moi.jpg' alt='photo de profil' className='rounded-3xl' />
+        <div className={styles.presentationBloc}>
+          <img src='/pictures/moi.jpg' alt='photo de profil' className={styles.img} />
+          <div className={styles.presentation}>
+            <div className={styles.name}>Rémy Bamas Lunay - Développeur Web</div>
+            <div>
+              <div className={styles.subtitle}>Qui suis-je ?</div>
+              <div className={styles.description}>Je suis un développeur web full stack, passionné et expérimenté.</div>
             </div>
-            <div className='flex flex-col h-fit space-y-5 items-center pc:items-start pc:my-32'>
-              <div className='text-3xl font-bold'>Rémy Bamas Lunay - Développeur Web</div>
-              <div>
-                <div className='text-2xl font-semibold'>Qui suis-je ?</div>
-                <div className='text-xl mx-4 phone:mx-0'>Je suis un développeur web full stack, passionné et expérimenté.</div>
-              </div>
-              <div>
-                <div className='text-2xl font-semibold'>Mes passions</div>
-                <ul className='text-xl list-disc ml-5'>
-                  <li>Sports mécaniques</li>
-                  <li>Breakdance</li>
-                </ul>
-              </div>
-              <div className='flex space-x-4'>
-                <Link href='https://www.linkedin.com/in/rémy-bamas-lunay-83ba7a170'><AiFillLinkedin size={50} /></Link>
-                <Link href="https://github.com/remybms"><AiFillGithub size={50} /></Link>
-              </div>
+            <div>
+              <div className={styles.subtitle}>Mes passions</div>
+              <ul className={styles.passionsList}>
+                <li>Sports mécaniques</li>
+                <li>Breakdance</li>
+              </ul>
             </div>
-          </div>
-          <div className='animate-bounce hidden tablet:flex justify-center pc:mb-5 text-blue self-end'>
-            <a href='#formation'><AiOutlineArrowDown size={42} /></a>
+            <div className={styles.links}>
+              <Link href='https://www.linkedin.com/in/rémy-bamas-lunay-83ba7a170' target='_blank' className={styles.logo}><AiFillLinkedin size={50} /></Link>
+              <Link href="https://github.com/remybms" target='_blank' className={styles.logo}><AiFillGithub size={50} /></Link>
+            </div>
           </div>
         </div>
-        <div id='formation' className='flex flex-col max-w-screen items-center tablet:pt-20'>
-          <ul className='grid grid-cols-2 tablet:grid-cols-3 pc:flex pc:flex-row pc:space-x-10 mb-14 text-darkpink'>
-            <li className='relative flex'>
-              <IoLogoJavascript size={60} className='m-10' />
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={110} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
-
-              </svg>
+        <div id='formation' className={styles.formation}>
+          <ul className={styles.languagesList}>
+            <li className={styles.language}>
+              <IoLogoJavascript size={60}/>
             </li>
-            <li className='relative flex'>
-              <FaPython size={60} className='m-10' />
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={170} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
-
-              </svg>
+            <li className={styles.languageBlue}>
+              <FaPython size={60} />
             </li>
-            <li className='relative flex'>
-              <FaJava size={60} className='m-10' />
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={190} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
-
-              </svg>
+            <li className={styles.language}>
+              <FaJava size={60} />
             </li>
-            <li className='relative flex'>
-              <SiPhp size={60} className='m-10' />
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={130} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
-              </svg>
+            <li className={styles.languageBlue}>
+              <SiPhp size={60} />
             </li>
-            <li className='col-start-1 col-end-3 tablet:col-start-2 tablet:col-end-2 flex justify-center items-center'>
-              <div className='relative flex'>
-                <SiCsharp size={60} className='m-10' />
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className='absolute'>
-                  <circle cx="50" cy="50" r="35" stroke="#4A919E" strokeWidth="5" fill='transparent' strokeDasharray={315} strokeDashoffset={170} strokeLinecap="round" stroke-mitterlimit="0" transform="rotate(-90 ) translate(-100 0)" />
-                </svg>
-              </div>
+            <li className={styles.lastLanguage}>
+                <SiCsharp size={60}/>
             </li>
-
           </ul>
 
-          <div className=' text-2xl text-blue p-2 border-4 rounded-lg'>
-            <button onClick={workDisplay} className={` hover:bg-pink hover:text-darkgrey p-2 rounded-md ${experience === 'work' ? 'bg-darkpink text-darkgrey' : 'bg-darkgrey text-pink'}`}>
+          <div className={styles.selector}>
+            <button onClick={workDisplay} className={experience === 'work' ? styles.selected : styles.notselected}>
               Expérience
             </button>
-            <button onClick={schoolDisplay} className={`hover:bg-pink hover:text-darkgrey p-2 rounded-md ${experience === 'school' ? 'bg-darkpink text-darkgrey' : 'bg-darkgrey text-pink'}`}>
+            <button onClick={schoolDisplay} className={experience === 'school' ? styles.selected : styles.notselected}>
               Formation
             </button>
           </div>
@@ -114,7 +88,9 @@ export default function Home() {
           </div>
 
         </div>
-
+        <div id="portfolio">
+          <Portfolio />
+        </div>
         <Footer />
       </main></>
   )
