@@ -50,7 +50,7 @@ export default function Home() {
               </ul>
             </div>
             <div className={styles.links}>
-              <Link href='https://www.linkedin.com/in/rémy-bamas-lunay-83ba7a170' target='_blank' className={styles.logo}><AiFillLinkedin size={50} /></Link>
+              <Link href='https://www.linkedin.com/in/remy-bamaslunay/' target='_blank' className={styles.logo}><AiFillLinkedin size={50} /></Link>
               <Link href="https://github.com/remybms" target='_blank' className={styles.logo}><AiFillGithub size={50} /></Link>
             </div>
           </div>
